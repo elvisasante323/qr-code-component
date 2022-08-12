@@ -1,0 +1,52 @@
+/** Universal Styles **/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+$bgColor: #d5e1ef;
+
+body {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  background-color: $bgColor;
+}
+/** End of Universal Styles **/
+
+/** Card **/
+.card {
+  width: 20em;
+  padding: 1rem;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+
+  .card--text {
+    text-align: center;
+
+    h1 {
+      font-size: 20px;
+    }
+
+    h1,p {
+      margin-top: 1em;
+    }
+
+    p {
+      font-size: 16px;
+      color: gray;
+      margin-bottom: 2em;
+    }
+  }
+
+  .card--img {
+    max-width: 100%;
+    border-radius: inherit;
+  }
+}
